@@ -1,9 +1,10 @@
 ## DESCRIPTION:
-Autoencoders pretraining using clustering v.1.0
+Autoencoders pretraining using clustering.
+v.1.0
 
 Related to the work:
 > Improving Autoencoders Performance for Hyperspectral Unmixing using Clustering
-Source code for the review process of the 14th Asian Conference on Intelligent Information and Database Systems (ACIIDS 2022).
+> Source code for the review process of the 14th Asian Conference on Intelligent Information and Database Systems (ACIIDS 2022).
 
 ## LICENSE:
 Copyright 2021 Institute of Theoretical and Applied Informatics,
