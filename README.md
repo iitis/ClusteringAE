@@ -46,8 +46,8 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
 All datasets have to be inserted into <em>./ATE/data/</em> folder.
 
 ## USAGE:
-Run the script using ./grids/run_exp.sh file.
-The script requires Samson and Jasper datasets in the ./ATE/data/ folder as well as saved models' weights in mpath (set by default to '/home/user/ClusteringAE/models').
+Run the script using `./grids/run_exp.sh` file.
+The script requires Samson and Jasper datasets in the <em>./ATE/data/</em> folder as well as saved models' weights in <em>mpath</em> (set by default to <em>/home/user/ClusteringAE/models</em>).
 
 ## DEPENDENCIES
 The scripts are dependent on [Autoencoder Testing Environment](https://github.com/iitis/AutoencoderTestingEnvironment). Used datasets, as well as loaded models' weights follow the same structure.
