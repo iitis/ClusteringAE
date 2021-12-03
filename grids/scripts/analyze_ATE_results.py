@@ -31,7 +31,7 @@ from pandas import DataFrame
 
 
 def analyze_ate_results(
-    fpath: str = '/home/user/ClusteringAE/results/results.pkl',
+    fpath: str = 'results/results.pkl',
 ):
     """
     Analyze ATE results.

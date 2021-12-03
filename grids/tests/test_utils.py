@@ -37,8 +37,8 @@ from cfg.default_params_aa import default_params_aa
 
 
 DPATH = 'ATE/data/'
-DNAME = 'Samson'
-MPATH = ('/home/user/ClusteringAE/models')
+DNAME = 'Custom'
+MPATH = ('models/exp_Kaiming_He_normal_MSE_10_verification_basic_Custom/model_0/model_initialization')
 
 
 class TestUtils(unittest.TestCase):

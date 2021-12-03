@@ -42,7 +42,7 @@ def exp(
     run_name: str,
     dpath: str = 'ATE/data/',
     dname: str = 'Samson',
-    mpath: str = '/home/user/ClusteringAE/models/',
+    mpath: str = 'models/',
     model_no: int = 0,
     rpath: str = 'results/',
     grid_shape: tuple_converter = (3, 3),
@@ -51,7 +51,7 @@ def exp(
     n_checkpoints: int = 10,
     seed: int = None,
     use_mlflow: bool = False,
-    mlflow_path: str = "/home/user/ClusteringAE/mlruns",
+    mlflow_path: str = "mlruns",
 ):
     """
     Performs and returns the results of AE unmixing with
@@ -85,6 +85,8 @@ def exp(
     if dname == 'Samson':
         exp_id = 4
     elif dname == 'Jasper':
+        exp_id = 10
+    elif dname == 'Custom':  # Used to run demo version of the experiment.
         exp_id = 10
     mpath = mpath + f'exp_{weights_init}_MSE_{exp_id}_verification_basic_{dname}/' \
             + f'model_{model_no}/model_initialization'

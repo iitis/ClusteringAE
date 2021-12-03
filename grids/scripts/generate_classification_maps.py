@@ -42,7 +42,7 @@ from ATE.ate.ate_utils import load_model
 
 def gen_class_maps(
     exp_name: str,
-    tracking_uri: str = 'file:/home/user/ClusteringAE/mlruns',
+    tracking_uri: str = 'file:mlruns',
     rpath: Path = Path('results/'),
     metrics: Tuple[str] = (
         'reconstruction_error_RMSE_multiplication',
@@ -139,7 +139,7 @@ def gen_class_maps(
 
 def download_class_maps_from_mlflow(
     exp_name: str,
-    tracking_uri: str = 'file:/home/user/ClusteringAE/mlruns',
+    tracking_uri: str = 'file:mlruns',
     rpath: Path = Path('results/')
 ):
     """

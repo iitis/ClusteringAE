@@ -83,7 +83,7 @@ def get_ov_acc(y_pred: torch.FloatTensor, y_true: torch.Tensor) -> float:
 
 def get_exp_data(
     exp_name: str,
-    tracking_uri: str = 'file:/home/user/ClusteringAE/mlruns'
+    tracking_uri: str = 'file:mlruns'
 ) -> List[Dict]:
     """
     Get info about experiment runs.

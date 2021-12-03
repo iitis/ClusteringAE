@@ -39,7 +39,7 @@ def exp(
     run_name: str,
     dpath: str = 'ATE/data/',
     dname: str = 'Samson',
-    mpath: str = '/home/user/ClusteringAE/models',
+    mpath: str = 'models',
     rpath: str = 'results/',
     weights_init: str = 'Kaiming_He_uniform',
 ) -> Dict[str, float]:
@@ -66,6 +66,10 @@ def exp(
         default_params_aa['batch_size'] = 4
         default_params_aa['learning_rate'] = 0.0001
     elif params_global['dataset_name'] == 'Jasper':
+        params_global['cube_shape'] = (100, 100, 198)
+        default_params_aa['batch_size'] = 20
+        default_params_aa['learning_rate'] = 0.001
+    elif dname == 'Custom':  # Used to run demo version of the experiment.
         params_global['cube_shape'] = (100, 100, 198)
         default_params_aa['batch_size'] = 20
         default_params_aa['learning_rate'] = 0.001
