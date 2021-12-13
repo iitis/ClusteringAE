@@ -41,7 +41,7 @@ def load_ground_truth(image_name):
     Load ground truth image, endmembers and abundances
     for a given image
     """
-    location_grid = '/mnt/samba/Actual/ClusteringAE/grids/exp_data/'
+    location_grid = ''
     data = np.load(f'{location_grid}/{image_name}_orig.npz',
                    allow_pickle=True)
     image = data['X_in']
@@ -64,9 +64,8 @@ def load_grid_single_model(results,
 
 
 def load_ATE_table():
-    location_ATE = '/mnt/samba/Actual/autoencoders_unmixing/results/'
-    path_ATE = (f'{location_ATE}'
-                f'weights_initialization_results_v2b_edited_with_distances_improved_mean_SAD.pkl')
+    location_ATE = ''
+    path_ATE = (f'{location_ATE}/file.pkl')
     return pd.read_pickle(path_ATE)
 
 
@@ -95,8 +94,8 @@ def create_table_grid(image_name,
     # columns order: 'model', 'weight_initialization',
     # 'reconstruction_error_RMSE', 'abundances_error',
     # 'endmembers_error'
-    location_grid = '/mnt/samba/Actual/ClusteringAE/grids/exp_data/'
-    path_grids = f'{location_grid}{image_name}_({grid_size},{grid_size}).npz'
+    location_grid = ''
+    path_grids = f'{location_grid}/{image_name}_({grid_size},{grid_size}).npz'
     results = np.load(path_grids, allow_pickle=True)
     for model in range(50):
         for init_method in ['Kaiming_He_normal',
